@@ -11,7 +11,7 @@ body {
   font-family: "Delius Swash Caps", cursive;
   color: #333;
   background:
-    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
     url('brick-texture.jpg'),
     #05c7f2;
   background-blend-mode: overlay;
@@ -77,12 +77,21 @@ header {
 .hero {
   text-align: center;
   padding: 60px 20px;
+  color: #333;
 }
 
 .hero h2 {
   color: #f20530;
   font-family: "Delius Swash Caps", cursive;
   font-size: 2rem;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #333;
 }
 
 .content {
