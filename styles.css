@@ -121,7 +121,14 @@ footer {
 
 .menu-section {
   padding: 40px 20px;
-  background-color: #fff8f0;
+  background: linear-gradient(
+      rgba(255, 248, 240, 0.85),
+      rgba(255, 248, 240, 0.85)
+    ),
+    url("images/menuoverview.jpg");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(5px);
 }
 
 .menu-section h2 {
@@ -160,9 +167,11 @@ footer {
 
 .menu-item img {
   width: 180px;
-  height: 180px;
+  height: 120px;
   object-fit: cover;
-  border-radius: 16px 0 0 16px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
 }
 
 .menu-info {
