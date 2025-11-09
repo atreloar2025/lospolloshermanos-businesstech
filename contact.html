@@ -1,66 +1,64 @@
 <section class="menu-section" style="background:#05c7f2; color:#021f59; padding:40px;">
 
-  <h1 style="text-align:center; font-size:3rem; font-weight:bold; margin-bottom:50px; color:#021f59;">Contact</h1>
+  <h2 style="text-align:center; font-size:3rem; font-weight:bold; margin-bottom:50px; color:#021f59;">Contact</h2>
 
-  <div class="menu-grid" style="margin-bottom:50px; gap:20px;">
-
-    <div class="menu-item" style="background:#05c7f2; border:1px solid black; box-shadow:none;">
-      <div class="menu-info" style="font-weight:bold; font-size:1.2rem;">
-        <h3 style="font-weight:bold; font-size:1.5rem;">John Smith — Owner</h3>
-        <p style="font-weight:bold; font-size:1.2rem;">Oversees all daily operations and customer experience.</p>
+  <div class="menu-grid" style="margin-bottom:50px;">
+    <div class="menu-item" style="border:1px solid black;">
+      <div class="menu-info">
+        <h3>John Smith — Owner</h3>
+        <p></p>
       </div>
     </div>
 
-    <div class="menu-item" style="background:#05c7f2; border:1px solid black; box-shadow:none;">
-      <div class="menu-info" style="font-weight:bold; font-size:1.2rem;">
-        <h3 style="font-weight:bold; font-size:1.5rem;">Sarah Johnson — Manager</h3>
-        <p style="font-weight:bold; font-size:1.2rem;">Handles scheduling, store coordination, and customer issues.</p>
+    <div class="menu-item" style="border:1px solid black;">
+      <div class="menu-info">
+        <h3>Sarah Johnson — Manager</h3>
+        <p></p>
       </div>
     </div>
 
-    <div class="menu-item" style="background:#05c7f2; border:1px solid black; box-shadow:none;">
-      <div class="menu-info" style="font-weight:bold; font-size:1.2rem;">
-        <h3 style="font-weight:bold; font-size:1.5rem;">Michael Lee — Catering Coordinator</h3>
-        <p style="font-weight:bold; font-size:1.2rem;">Manages catering events, large orders, and delivery logistics.</p>
+    <div class="menu-item" style="border:1px solid black;">
+      <div class="menu-info">
+        <h3>Michael Lee — Catering Coordinator</h3>
+        <p></p>
       </div>
     </div>
-
   </div>
 
-  <div class="menu-grid" style="margin-bottom:40px; gap:20px;">
-
-    <div class="menu-item" style="flex:1; background:#05c7f2; border:1px solid black; box-shadow:none;">
-      <div class="menu-info" style="font-weight:bold; font-size:1.2rem;">
-        <h3 style="font-weight:bold; font-size:1.5rem;">Enter Name</h3>
-        <input type="text" style="width:100%; padding:12px; background:#05c7f2; border:1px solid black; color:#021f59; font-weight:bold; font-size:1.2rem; border-radius:4px;">
+  <div class="menu-grid" style="margin-bottom:40px;">
+    <div class="menu-item" style="border:1px solid black;">
+      <div class="menu-info">
+        <h3>Enter Name</h3>
+        <input type="text" class="contact-input">
       </div>
     </div>
 
-    <div class="menu-item" style="flex:1; background:#05c7f2; border:1px solid black; box-shadow:none;">
-      <div class="menu-info" style="font-weight:bold; font-size:1.2rem;">
-        <h3 style="font-weight:bold; font-size:1.5rem;">Message / Catering Request Details</h3>
-        <textarea style="width:100%; height:180px; padding:12px; background:#05c7f2; border:1px solid black; color:#021f59; font-weight:bold; font-size:1.2rem; border-radius:4px;"></textarea>
+    <div class="menu-item" style="border:1px solid black;">
+      <div class="menu-info">
+        <h3>Message / Catering Request Details</h3>
+        <textarea class="contact-textarea"></textarea>
       </div>
     </div>
-
   </div>
 
-  <div class="menu-grid" style="gap:20px;">
-
-    <div class="menu-item" style="flex:1; background:#05c7f2; border:1px solid black; box-shadow:none;">
-      <div class="menu-info" style="font-weight:bold; font-size:1.2rem;">
-        <h3 style="font-weight:bold; font-size:1.5rem;">Date of Pickup</h3>
-        <input type="date" style="width:100%; padding:12px; background:#05c7f2; border:1px solid black; color:#021f59; font-weight:bold; font-size:1.2rem; border-radius:4px;">
+  <div class="menu-grid" style="margin-bottom:30px;">
+    <div class="menu-item" style="border:1px solid black;">
+      <div class="menu-info">
+        <h3>Date of Pickup</h3>
+        <input type="date" class="contact-input">
       </div>
     </div>
 
-    <div class="menu-item" style="flex:1; background:#05c7f2; border:1px solid black; box-shadow:none;">
-      <div class="menu-info" style="font-weight:bold; font-size:1.2rem;">
-        <h3 style="font-weight:bold; font-size:1.5rem;">Time of Pickup</h3>
-        <select id="pickup-time" style="width:100%; padding:12px; background:#05c7f2; border:1px solid black; color:#021f59; font-weight:bold; font-size:1.2rem; border-radius:4px;"></select>
+    <div class="menu-item" style="border:1px solid black;">
+      <div class="menu-info">
+        <h3>Time of Pickup</h3>
+        <select id="pickup-time" class="contact-input"></select>
       </div>
     </div>
+  </div>
 
+  <div style="text-align:center; margin-top:40px;">
+    <a href="thankyou.html" class="submit-button">Submit</a>
   </div>
 
 </section>
@@ -78,7 +76,6 @@
     let displayHour = h % 12 === 0 ? 12 : h % 12;
     let displayMin = m.toString().padStart(2, "0");
     let text = `${displayHour}:${displayMin} ${ampm}`;
-
     let opt = document.createElement("option");
     opt.value = text;
     opt.textContent = text;
