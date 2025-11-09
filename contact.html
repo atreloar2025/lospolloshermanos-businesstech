@@ -25,41 +25,45 @@
     </div>
   </div>
 
-  <div class="menu-grid" style="margin-bottom:40px;">
-    <div class="menu-item" style="border:1px solid black;">
-      <div class="menu-info">
-        <h3>Enter Name</h3>
-        <input type="text" class="contact-input">
+  <form action="thankyou.html" method="get">
+
+    <div class="menu-grid" style="margin-bottom:40px;">
+      <div class="menu-item" style="border:1px solid black;">
+        <div class="menu-info">
+          <h3>Enter Name</h3>
+          <input type="text" name="name" class="contact-input" required>
+        </div>
+      </div>
+
+      <div class="menu-item" style="border:1px solid black;">
+        <div class="menu-info">
+          <h3>Message / Catering Request Details</h3>
+          <textarea name="message" class="contact-textarea" required></textarea>
+        </div>
       </div>
     </div>
 
-    <div class="menu-item" style="border:1px solid black;">
-      <div class="menu-info">
-        <h3>Message / Catering Request Details</h3>
-        <textarea class="contact-textarea"></textarea>
+    <div class="menu-grid" style="margin-bottom:30px;">
+      <div class="menu-item" style="border:1px solid black;">
+        <div class="menu-info">
+          <h3>Date of Pickup</h3>
+          <input type="date" name="pickup_date" class="contact-input" required>
+        </div>
+      </div>
+
+      <div class="menu-item" style="border:1px solid black;">
+        <div class="menu-info">
+          <h3>Time of Pickup</h3>
+          <select id="pickup-time" name="pickup_time" class="contact-input" required></select>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="menu-grid" style="margin-bottom:30px;">
-    <div class="menu-item" style="border:1px solid black;">
-      <div class="menu-info">
-        <h3>Date of Pickup</h3>
-        <input type="date" class="contact-input">
-      </div>
+    <div style="text-align:center; margin-top:40px;">
+      <button type="submit" class="submit-button">Submit</button>
     </div>
 
-    <div class="menu-item" style="border:1px solid black;">
-      <div class="menu-info">
-        <h3>Time of Pickup</h3>
-        <select id="pickup-time" class="contact-input"></select>
-      </div>
-    </div>
-  </div>
-
-  <div style="text-align:center; margin-top:40px;">
-    <a href="thankyou.html" class="submit-button">Submit</a>
-  </div>
+  </form>
 
 </section>
 
@@ -76,6 +80,7 @@
     let displayHour = h % 12 === 0 ? 12 : h % 12;
     let displayMin = m.toString().padStart(2, "0");
     let text = `${displayHour}:${displayMin} ${ampm}`;
+
     let opt = document.createElement("option");
     opt.value = text;
     opt.textContent = text;
