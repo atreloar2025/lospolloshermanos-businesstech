@@ -16,10 +16,12 @@
   }
 
   .menu-section {
-    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
   h2 {
@@ -32,9 +34,8 @@
     background: #05c7f2;
     border: 1px solid black;
     border-radius: 12px;
-    padding: 20px;
+    padding: 25px 20px;
     width: 100%;
-    max-width: 500px;
     margin-bottom: 20px;
     box-sizing: border-box;
   }
@@ -56,12 +57,13 @@
     padding: 12px;
     border: 1px solid black;
     border-radius: 4px;
-    font-family: "Delius Swash Caps", cursive;
+    font-family: "Delius Swash Caps", cursive !important;
     font-weight: bold;
     font-size: 1.2rem;
     background: #05c7f2;
     color: #021f59;
     box-sizing: border-box;
+    text-align: center;
   }
 
   textarea {
@@ -73,7 +75,7 @@
     padding: 15px 50px;
     font-size: 1.4rem;
     font-weight: bold;
-    font-family: "Delius Swash Caps", cursive;
+    font-family: "Delius Swash Caps", cursive !important;
     background: #021f59;
     color: #fff;
     border: none;
@@ -92,6 +94,7 @@
 
   <h2>Contact</h2>
 
+  <!-- Staff Boxes -->
   <div class="menu-item">
     <div class="menu-info">
       <h3>John Smith — Owner</h3>
@@ -113,7 +116,8 @@
     </div>
   </div>
 
-  <form action="thankyou.html" method="get" style="width:100%; max-width:500px;">
+  <!-- Contact Form -->
+  <form action="thankyou.html" method="get" style="width:100%;">
 
     <div class="menu-item">
       <div class="menu-info">
@@ -144,7 +148,6 @@
     </div>
 
     <button type="submit" class="submit-button">Submit</button>
-
   </form>
 
 </section>
