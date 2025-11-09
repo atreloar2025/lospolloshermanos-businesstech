@@ -1,23 +1,117 @@
-<section class="menu-section" style="background:#05c7f2; color:#021f59; padding:40px;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanalei&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #05c7f2;
+    font-family: "Delius Swash Caps", cursive;
+    color: #021f59;
+    text-align: center;
+  }
 
-  <h2 style="text-align:center; font-size:3rem; font-weight:bold; margin-bottom:50px; color:#021f59;">Contact</h2>
+  .menu-section {
+    padding: 40px;
+  }
 
-  <div class="menu-grid" style="margin-bottom:50px;">
-    <div class="menu-item" style="border:1px solid black;">
+  h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center; /* center each grid item */
+    margin-bottom: 40px;
+  }
+
+  .menu-item {
+    background: #05c7f2;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+  }
+
+  .menu-info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .menu-info p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .contact-input, .contact-textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-family: "Delius Swash Caps", cursive;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: #05c7f2;
+    color: #021f59;
+    box-sizing: border-box;
+  }
+
+  textarea.contact-textarea {
+    height: 180px;
+  }
+
+  .submit-button {
+    margin-top: 40px;
+    padding: 15px 40px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: "Delius Swash Caps", cursive;
+    background: #021f59;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .submit-button:hover {
+    background: #f20530;
+  }
+</style>
+</head>
+<body>
+
+<section class="menu-section">
+
+  <h2>Contact</h2>
+
+  <div class="menu-grid">
+    <div class="menu-item">
       <div class="menu-info">
         <h3>John Smith — Owner</h3>
         <p></p>
       </div>
     </div>
 
-    <div class="menu-item" style="border:1px solid black;">
+    <div class="menu-item">
       <div class="menu-info">
         <h3>Sarah Johnson — Manager</h3>
         <p></p>
       </div>
     </div>
 
-    <div class="menu-item" style="border:1px solid black;">
+    <div class="menu-item">
       <div class="menu-info">
         <h3>Michael Lee — Catering Coordinator</h3>
         <p></p>
@@ -27,15 +121,15 @@
 
   <form action="thankyou.html" method="get">
 
-    <div class="menu-grid" style="margin-bottom:40px;">
-      <div class="menu-item" style="border:1px solid black;">
+    <div class="menu-grid">
+      <div class="menu-item">
         <div class="menu-info">
           <h3>Enter Name</h3>
           <input type="text" name="name" class="contact-input" required>
         </div>
       </div>
 
-      <div class="menu-item" style="border:1px solid black;">
+      <div class="menu-item">
         <div class="menu-info">
           <h3>Message / Catering Request Details</h3>
           <textarea name="message" class="contact-textarea" required></textarea>
@@ -43,15 +137,15 @@
       </div>
     </div>
 
-    <div class="menu-grid" style="margin-bottom:30px;">
-      <div class="menu-item" style="border:1px solid black;">
+    <div class="menu-grid">
+      <div class="menu-item">
         <div class="menu-info">
           <h3>Date of Pickup</h3>
           <input type="date" name="pickup_date" class="contact-input" required>
         </div>
       </div>
 
-      <div class="menu-item" style="border:1px solid black;">
+      <div class="menu-item">
         <div class="menu-info">
           <h3>Time of Pickup</h3>
           <select id="pickup-time" name="pickup_time" class="contact-input" required></select>
@@ -59,11 +153,9 @@
       </div>
     </div>
 
-    <div style="text-align:center; margin-top:40px;">
-      <button type="submit" class="submit-button">Submit</button>
-    </div>
-
+    <button type="submit" class="submit-button">Submit</button>
   </form>
+
 </section>
 
 <script>
@@ -86,3 +178,6 @@
     select.appendChild(opt);
   }
 </script>
+
+</body>
+</html>
