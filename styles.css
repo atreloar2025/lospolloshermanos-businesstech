@@ -236,3 +236,73 @@ footer {
   color: #b02a02;
   margin-top: 5px;
 }
+
+.header-center {
+  text-align: center;
+}
+
+.about-grid {
+  display: grid;
+  background-color: #fff350;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1;
+}
+
+.restaurant-story {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  background-color: #fff;
+  border-color: #f20530;
+  border-top-width: 50px;
+  justify-content: left;
+  margin: 25px;
+  padding: 25px;
+}
+
+.restaurant-pic {
+  width: 500px;
+  float: right;
+  margin: 25px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  border: 10px solid;
+  border-color: #f20530;
+}
+
+.gus-bio {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  text-align: center;
+  margin: 25px;
+  
+}
+
+.profile-pic {
+  width: 250px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  justify-content: center;
+  border: 10px solid;
+  border-color: #f20530;
+}
+
+.gus-gallery {
+  display: flex;
+  margin: 0px;
+  padding: 25px;
+  background-color: #f20530;
+  justify-content: center;
+}
+
+.gus-photos {
+  height: 200px;
+  width: 300px;
+  margin: 25px;
+}
+
+.gus-photos:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
