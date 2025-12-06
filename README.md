@@ -10,19 +10,19 @@ The site consists of five HTML pages styled with a single shared CSS file. Each 
 
 ---
 
-## Team Members and Roles
+## Team Members and Their Roles
 
 ### Aaron Treloar — Content and Documentation Lead
 
-Responsible for writing the content management guide, defining instructions for editing and adding pages, and assisting with link verification.
+Responsible for writing the content management guide, defining instructions for editing, adding pages, and assisting with link verification.
 
 ### Sosa Esezobor — Project Lead and Branding Designer
 
-Responsible for team coordination, creating the README and initial style guide framework for documentation.
+Handled team coordination and created the README and initial style guide framework.
 
 ### Eli Severns — Reviewer and Consistency Editor
 
-Responsible for reviewing all files for clear formatting, structure, and internal consistency throughout web pages.
+For this project, he reviewed all files for clear formatting, structure, and internal consistency.
 
 ---
 
