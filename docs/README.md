@@ -1,12 +1,12 @@
 # Los Pollos Hermanos Website Documentation
 
-This repository contains a multi-page website built for Los Pollos Hermanos as part of a web development and documentation project. The goal of the project is to produce a clear, usable website and create documentation that supports future editing, maintenance, and expansion.
+This repository contains a multi-page website built for Los Pollos Hermanos as part of a web development and documentation project. The goal of the project is to produce a clear, usable, true to style website and create documentation that supports future editing, maintenance, and expansion.
 
 ---
 
 ## Project Overview
 
-The site consists of five HTML pages styled with a single shared CSS file. Each page uses consistent navigation, layout structure, and branding. Documentation files provide guidance on editing content, maintaining brand standards, and understanding team responsibilities.
+The site consists of five HTML pages styled with a single shared CSS file. Each page uses consistent navigation, layout structure, and franchise branding. Documentation files provide guidance on editing content, maintaining brand standards, and understanding team responsibilities.
 
 ---
 
@@ -22,7 +22,7 @@ Responsible for team coordination, creating the README and initial style guide f
 
 ### Eli Severns — Reviewer and Consistency Editor
 
-Responsible for reviewing all files for clear formatting, structure, and internal consistency throughout web pages.
+Responsible for editing and reviewing all files for clear formatting, structure, and internal consistency throughout web pages.
 
 ---
 
