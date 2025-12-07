@@ -22,7 +22,7 @@ Handled team coordination and created the README and initial style guide framewo
 
 ### Eli Severns — Reviewer and Consistency Editor
 
-For this project, he reviewed all files for clear formatting, structure, and internal consistency.
+Reviewed and edited all files for clear formatting, structure, and internal consistency.
 
 ---
 
